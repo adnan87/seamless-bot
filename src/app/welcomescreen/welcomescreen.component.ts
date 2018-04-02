@@ -12,4 +12,7 @@ export class WelcomescreenComponent implements OnInit {
   ngOnInit() {
   }
 
+
+  
+
 }
