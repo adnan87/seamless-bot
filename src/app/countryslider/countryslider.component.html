@@ -1,0 +1,10 @@
+<div class ="backgd">
+  <h1>UAE</h1>
+  <div class="slider">
+  <ngx-slick class="carousel" #slickModal="slick-modal" [config]="slideConfig" (afterChange)="afterChange($event)">
+       <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+             <img src="{{ slide.img }}" alt="" width="100%" height="auto">
+       </div>
+   </ngx-slick>
+ </div>
+ </div>
