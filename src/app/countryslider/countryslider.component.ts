@@ -1,6 +1,6 @@
 import { Component,OnInit } from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
-import {SlickModule} from 'ngx-slick';
+import { SlickModule } from 'ngx-slick';
 
 
 
@@ -24,7 +24,7 @@ export class CountrysliderComponent implements OnInit {
       {img: 'assets/Images/UAEImages/family-days-out-dubai-800x444.jpg'},
       {img: 'assets/Images/UAEImages/Ferris-wheel-in-Al-Qasba-Sharjah.jpg'}
     ];
-    slideConfig = {'slidesToShow': 1, 'slidesToScroll': 1, 'autoplay':true ,'autospeed':1000};
+    slideConfig = {'slidesToShow': 1, 'slidesToScroll': 1, 'autoplay':true ,'speed':8000};
 
 
 

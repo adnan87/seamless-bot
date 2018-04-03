@@ -1,0 +1,24 @@
+.backgd{
+  .svg-img{
+    float:left;
+    width:80%;
+    height:800px;
+    margin-top: -20px;
+  }
+  .countrylist{
+    float: left;
+    width:20%;
+    margin-top: 150px;
+    ul{
+      list-style-image: url('/assets/Images/png/bullet.png');
+
+      list-style-type: none;
+      li {
+        font-size:30px;
+        color:#FFFFFF;
+        padding: 10px;
+
+      }
+    }
+  }
+}

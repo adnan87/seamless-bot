@@ -1,0 +1,77 @@
+.backgd{
+  .travelinfo{
+    padding-top:120px;
+    #wrap {
+    // padding: 40px;
+    text-align: center;
+    width: 100%;
+    #left, #right{
+         // background: #ccc;
+         display: inline-block;
+         padding: 35px;
+         margin: 3px;
+         border:1px solid #505050;
+         width:15%;
+         border-radius: 6px;
+         .container{
+           width: 100%;
+           .icon{
+            width:25%;
+            float:left;
+            border-right: 1px solid #505050;
+            .imgicon{
+              width: 25px;
+              height: 25px;
+
+            }
+
+           }
+
+           .detailtext{
+             width:100%;
+
+             p{
+               font-size: 15px;
+               color:#dfdfe1;
+             }
+           }
+
+         }
+   }
+   #hotel{
+     display: inline-block;
+     padding: 35px;
+     margin: 3px;
+     border:1px solid #505050;
+     width:36%;
+     border-radius: 6px;
+     .container{
+       width: 100%;
+       .icon{
+        width:17%;
+        float:left;
+        border-right: 1px solid #505050;
+        .imgicon{
+          width: 25px;
+          height: 25px;
+
+        }
+
+       }
+
+       .detailtext{
+         width:39%;
+
+         p{
+           font-size: 15px;
+           color:#dfdfe1;
+         }
+       }
+
+     }
+}
+
+   }
+}
+
+  }

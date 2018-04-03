@@ -8,6 +8,9 @@ import { AppComponent } from './app.component';
 import { WelcomescreenComponent } from './welcomescreen/welcomescreen.component';
 import { MapComponent } from './map/map.component';
 import { CountrysliderComponent } from './countryslider/countryslider.component';
+import { PlaneComponent } from './plane/plane.component';
+import { MapselectedComponent } from './mapselected/mapselected.component';
+import { DeparturedetailComponent } from './departuredetail/departuredetail.component';
 
 
 @NgModule({
@@ -15,7 +18,10 @@ import { CountrysliderComponent } from './countryslider/countryslider.component'
     AppComponent,
     WelcomescreenComponent,
     MapComponent,
-    CountrysliderComponent
+    CountrysliderComponent,
+    PlaneComponent,
+    MapselectedComponent,
+    DeparturedetailComponent
   ],
   imports: [
     BrowserModule,
