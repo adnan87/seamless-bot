@@ -8,14 +8,14 @@
 
     .globe{
         position: relative;
-        width: 500px;
+       width: 500px;
        height: 500px;
        margin: 3em auto;
        top:170px;
        background: url("/assets/Images/png/earthmap1.png") 0 0 repeat;
 
        border-radius: 50%;
-       background-size: 850px;
+       background-size: 1000px;
        animation: rotate 6s linear infinite;
        transition: transform 100ms linear;
        transform-style: preserve-3d;
@@ -46,7 +46,7 @@
 }
 @keyframes rotate {
   0% {background-position: 0 0;}
-  100% {background-position: 850px 0;}
+  100% {background-position: 1000px 0;}
 }
     }
   }

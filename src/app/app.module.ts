@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { SlickModule } from 'ngx-slick';
-// import { SlimScroll } from 'angular4-slimscroll';
+import {Routes, RouterModule} from "@angular/router";
 import {Directive} from '@angular/core';
 
 
@@ -13,8 +13,18 @@ import { PlaneComponent } from './plane/plane.component';
 import { MapselectedComponent } from './mapselected/mapselected.component';
 import { DeparturedetailComponent } from './departuredetail/departuredetail.component';
 import { ThankYouComponent } from './thank-you/thank-you.component';
+import { BahrainsliderComponent } from './bahrainslider/bahrainslider.component';
+import { OmansliderComponent } from './omanslider/omanslider.component';
+import { KuwaitsliderComponent } from './kuwaitslider/kuwaitslider.component';
+import { UaesliderComponent } from './uaeslider/uaeslider.component';
 
+const routes: Routes = [
+  {
+    path:'ksa',
+    component: CountrysliderComponent
+  }
 
+]
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,12 +34,16 @@ import { ThankYouComponent } from './thank-you/thank-you.component';
     PlaneComponent,
     MapselectedComponent,
     DeparturedetailComponent,
-    ThankYouComponent
+    ThankYouComponent,
+    BahrainsliderComponent,
+    OmansliderComponent,
+    KuwaitsliderComponent,
+    UaesliderComponent
   ],
   imports: [
     BrowserModule,
-    SlickModule.forRoot()
-    // CarouselModule
+    SlickModule.forRoot(),
+    RouterModule.forRoot(routes, {useHash: true})
   ],
   providers: [],
   bootstrap: [AppComponent]

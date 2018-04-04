@@ -1,10 +1,9 @@
-<div>
   <!-- <h1>UAE</h1> -->
+<!-- This component has KSA images -->
   <div class="slider">
-  <ngx-slick class="carousel" #slickModal="slick-modal" [config]="slideConfig" (afterChange)="afterChange($event)">
-       <div ngxSlickItem *ngFor="let slide of slides" >
+  <ngx-slick class="carousel" #slickModal="slick-modal" [config]="slideConfig">
+       <div ngxSlickItem *ngFor="let slide of slides">
              <img src="{{ slide.img }}" alt="" width="100%" height="100%">
        </div>
    </ngx-slick>
- </div>
  </div>

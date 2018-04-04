@@ -11,13 +11,12 @@
     margin-top: 150px;
     ul{
       list-style-image: url('/assets/Images/png/bullet.png');
-
       list-style-type: none;
       li {
-        font-size:30px;
-        color:#FFFFFF;
-        padding: 10px;
-
+          font-size:30px;
+          color:#FFFFFF;
+          list-style-type: none;
+          padding: 10px;
       }
     }
   }
