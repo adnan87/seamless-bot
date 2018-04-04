@@ -1,7 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { SlickModule } from 'ngx-slick';
-// import { CarouselModule } from 'angular4-carousel';
+// import { SlimScroll } from 'angular4-slimscroll';
+import {Directive} from '@angular/core';
 
 
 import { AppComponent } from './app.component';
@@ -11,6 +12,7 @@ import { CountrysliderComponent } from './countryslider/countryslider.component'
 import { PlaneComponent } from './plane/plane.component';
 import { MapselectedComponent } from './mapselected/mapselected.component';
 import { DeparturedetailComponent } from './departuredetail/departuredetail.component';
+import { ThankYouComponent } from './thank-you/thank-you.component';
 
 
 @NgModule({
@@ -21,7 +23,8 @@ import { DeparturedetailComponent } from './departuredetail/departuredetail.comp
     CountrysliderComponent,
     PlaneComponent,
     MapselectedComponent,
-    DeparturedetailComponent
+    DeparturedetailComponent,
+    ThankYouComponent
   ],
   imports: [
     BrowserModule,

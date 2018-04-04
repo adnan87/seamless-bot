@@ -1,0 +1,71 @@
+.backgd{
+  .travelinfo{
+    padding-top:120px;
+    #wrap {
+    text-align: center;
+    width: 100%;
+    #greetsect{
+      width: 54%;
+      float: left;
+      text-align: right;
+      .thanktext{
+        margin-top: 185px;
+        h1{
+          font-size: 45px;
+          color:#ffffff;
+          font-weight:bold;
+        }
+        p{
+          font-size: 20px;
+          color:#ffffff;
+        }
+      }
+    }
+    #departinfo{
+      width:45%;
+      float: left;
+      ul{
+        list-style-type: none;
+        li{
+          margin: 35px;
+          .container{
+            width: 100%;
+            .icon{
+             width:20%;
+             float:left;
+             text-align: right;
+             margin-left: 10px;
+             // border-right: 1px solid #505050;
+             .imgicon{
+               width: 25px;
+               height: 25px;
+               padding-right: 20px;
+             }
+            }
+            .detailtext{
+              width:49%;
+              text-align: left;
+              h3{
+                font-size: 12px;
+                color:#dfdfe1;
+                p{
+                  font-size: 13px;
+                  color:#dfdfe1;
+                  margin-top: 3px;
+
+                }
+              }
+
+            }
+
+          }
+
+
+        }
+      }
+
+    }
+
+   }
+ }
+}

@@ -5,13 +5,22 @@
     // padding: 40px;
     text-align: center;
     width: 100%;
+
     #left, #right{
-         // background: #ccc;
          display: inline-block;
          padding: 35px;
          margin: 3px;
          border:1px solid #505050;
          width:15%;
+         &:active{
+            background-color: #18bf4b;
+         }
+         &:hover {
+           background-color: #18bf4b;
+         }
+         &:active{
+            background-color: #18bf4b;
+         }
          border-radius: 6px;
          .container{
            width: 100%;
@@ -45,10 +54,13 @@
      border:1px solid #505050;
      width:36%;
      border-radius: 6px;
+     &:hover{
+        background-color: #18bf4b;
+     }
      .container{
        width: 100%;
        .icon{
-        width:17%;
+        width:10%;
         float:left;
         border-right: 1px solid #505050;
         .imgicon{
@@ -61,7 +73,6 @@
 
        .detailtext{
          width:39%;
-
          p{
            font-size: 15px;
            color:#dfdfe1;
