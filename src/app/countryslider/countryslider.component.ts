@@ -37,7 +37,6 @@ export class CountrysliderComponent implements OnInit {
       },
       {
         title: 'assets/Images/KSA/2.png',
-
       }
 
     ]
@@ -45,10 +44,7 @@ export class CountrysliderComponent implements OnInit {
   ngOnInit() {
     this.carouselOne = {
       grid: {xs: 1, sm: 1, md: 1, lg: 1, all: 0},
-      // slide: 1,
-      // speed: 500,
-      // interval: 1500,
-      speed: 2000,
+      speed: 3400,
       interval: 3800,
       point: {
         visible: false
@@ -60,17 +56,14 @@ export class CountrysliderComponent implements OnInit {
       animation: 'lazy',
       custom: 'banner'
     }
-  // this.slides = [
-  //     { img: 'assets/Images/KSA/1.png'},
-  //     { img: 'assets/Images/KSA/2.png'}
-  //   ];
-  //  this.slideConfig = {'infinite': true,'slidesToShow': 1, 'slidesToScroll': 1, 'autoplay':true , 'autoplaySpeed': 600,'speed':500 };
-
+  
    }
    public myfunc(event: Event) {
        // carouselLoad will trigger this funnction when your load value reaches
        // it is helps to load the data by parts to increase the performance of the app
        // must use feature to all carousel
     }
+
+
 
 }

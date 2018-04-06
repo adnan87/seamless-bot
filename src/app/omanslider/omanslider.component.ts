@@ -7,16 +7,35 @@ import { NgxCarousel } from 'ngx-carousel';
   styleUrls: ['./omanslider.component.scss']
 })
 export class OmansliderComponent implements OnInit {
+  public itemList: object[] = [];
   public carouselOne: NgxCarousel;
 
-  constructor() { }
+  constructor() {
+    this.itemList = [
+        {
+          title: 'assets/Images/Oman/1.png',
+
+        },
+        {
+          title: 'assets/Images/Oman/2.png',
+
+        },
+        {
+          title: 'assets/Images/Oman/1.png',
+
+        },
+        {
+          title: 'assets/Images/Oman/2.png',
+        }
+
+      ] }
 
   ngOnInit() {
     this.carouselOne = {
       grid: {xs: 1, sm: 1, md: 1, lg: 1, all: 0},
       slide: 1,
-      speed: 600,
-      interval: 3000,
+      speed: 3400,
+      interval: 3800,
       point: {
         visible: false
       },

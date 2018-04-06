@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-mapselected',
@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./mapselected.component.scss']
 })
 export class MapselectedComponent implements OnInit {
-
-  constructor() { }
+ // @Output()
+ // countryName = new EventEmitter();
+ constructor() { }
 
   ngOnInit() {
   }
+  //
+  // onCountryClick(country){
+  //   this.countryName.emit(country);
+  // }
 
 }

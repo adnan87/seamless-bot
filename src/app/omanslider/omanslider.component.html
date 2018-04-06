@@ -5,7 +5,7 @@
      </div>
  </ngx-slick>
 </div> -->
-<ngx-carousel
+<!-- <ngx-carousel
         [inputs]="carouselOne"
         (carouselLoad)="myfunc($event)">
           <ngx-item NgxCarouselItem>
@@ -17,4 +17,13 @@
 
           <button NgxCarouselPrev class='leftRs'></button>
           <button NgxCarouselNext class='rightRs'></button>
-</ngx-carousel>
+</ngx-carousel> -->
+<div>
+      <ngx-carousel [inputs]="carouselOne">
+      <ngx-item *ngFor="let item of itemList" NgxCarouselItem>
+         <img src="{{ item.title }}" alt="" width="100%" height="100%">
+      </ngx-item>
+      <button NgxCarouselPrev class="leftRs"></button>
+      <button NgxCarouselNext class="rightRs"></button>
+    </ngx-carousel>
+</div>
