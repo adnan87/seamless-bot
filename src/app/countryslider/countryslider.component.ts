@@ -12,26 +12,52 @@ import { NgxCarousel } from 'ngx-carousel';
   styleUrls: ['./countryslider.component.scss']
 })
 export class CountrysliderComponent implements OnInit {
+  public itemList: object[] = [];
   public carouselOne: NgxCarousel;
+
      //slides:Array<Object>;
    // slides:Array<Object> = [
    //      'assets/Images/KSA/1.png',
    //      'assets/Images/KSA/2.png'
    //   ];
     // slideConfig;
-  constructor() { }
+  constructor() {
+  this.itemList = [
+      {
+        title: 'assets/Images/KSA/1.png',
+
+      },
+      {
+        title: 'assets/Images/KSA/2.png',
+
+      },
+      {
+        title: 'assets/Images/KSA/1.png',
+
+      },
+      {
+        title: 'assets/Images/KSA/2.png',
+
+      }
+
+    ]
+  }
   ngOnInit() {
     this.carouselOne = {
       grid: {xs: 1, sm: 1, md: 1, lg: 1, all: 0},
-      slide: 1,
-      speed: 600,
-      interval: 3000,
+      // slide: 1,
+      // speed: 500,
+      // interval: 1500,
+      speed: 2000,
+      interval: 3800,
       point: {
         visible: false
       },
-      load: 2,
+      load:2,
       touch: true,
       loop: true,
+      easing: 'ease',
+      animation: 'lazy',
       custom: 'banner'
     }
   // this.slides = [

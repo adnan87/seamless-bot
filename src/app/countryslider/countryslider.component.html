@@ -17,16 +17,34 @@
  <!-- <div style="width: 800px; height: 400px">
   <carousel [sources]="imageSources" [config]="config"></carousel>
 </div> -->
-<ngx-carousel
+<!-- <ngx-carousel
         [inputs]="carouselOne"
         (carouselLoad)="myfunc($event)">
           <ngx-item NgxCarouselItem>
           <img src= "assets/Images/KSA/1.png" width="100%" height="100%">
           </ngx-item>
           <ngx-item NgxCarouselItem>
+          <img src= "assets/Images/KSA/2.png" width="100%" height="100%">
+          </ngx-item> -->
+          <!-- <ngx-item NgxCarouselItem>
           <img src= "assets/Images/KSA/1.png" width="100%" height="100%">
           </ngx-item>
+          <ngx-item NgxCarouselItem>
+          <img src= "assets/Images/KSA/2.png" width="100%" height="100%">
+          </ngx-item> -->
 
-          <button NgxCarouselPrev class='leftRs'></button>
+          <!-- <button NgxCarouselPrev class='leftRs'></button>
           <button NgxCarouselNext class='rightRs'></button>
-</ngx-carousel>
+</ngx-carousel> -->
+<div>
+      <ngx-carousel [inputs]="carouselOne">
+      <ngx-item *ngFor="let item of itemList" NgxCarouselItem>
+        <!-- <div [ngStyle]="{'background-color': item.color, 'height.px': 100, 'color': 'white'}">
+          <h3>{{item.title}}</h3>
+        </div> -->
+         <img src="{{ item.title }}" alt="" width="100%" height="100%">
+      </ngx-item>
+      <button NgxCarouselPrev class="leftRs">&lt;</button>
+      <button NgxCarouselNext class="rightRs">&gt;</button>
+    </ngx-carousel>
+</div>
