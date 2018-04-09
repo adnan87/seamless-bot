@@ -6,15 +6,17 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./mapselected.component.scss']
 })
 export class MapselectedComponent implements OnInit {
- // @Output()
- // countryName = new EventEmitter();
+
  constructor() { }
 
   ngOnInit() {
+    // this.socket = io.connect('https://socket0test.herokuapp.com/');
+    // this.socket.on('actionRecieved', function(msg) {
+    //   alert('BYYY');
+    //    console.log(msg.action);
+    //          // console.log(this.messages);
+    //      });
   }
-  //
-  // onCountryClick(country){
-  //   this.countryName.emit(country);
-  // }
+
 
 }

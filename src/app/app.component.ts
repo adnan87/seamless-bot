@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -11,7 +12,7 @@ export class AppComponent implements OnInit{
   ngOnInit(){
     this.hideSlider()
   }
-  
+
   hideSlider(): void {
     let temp = this;
      setTimeout(function() {

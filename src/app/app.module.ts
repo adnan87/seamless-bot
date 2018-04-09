@@ -1,12 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { SlickModule } from 'ngx-slick';
-// import { CarouselModule } from 'angular4-carousel';
-// import { OwlModule } from 'ngx-owl-carousel';
 import {Routes, RouterModule} from "@angular/router";
 import { NgxCarouselModule } from 'ngx-carousel';
 import 'hammerjs';
-import {Directive} from '@angular/core';
+import { ChatService } from './chat.service';
 
 
 import { AppComponent } from './app.component';
@@ -46,13 +44,10 @@ const routes: Routes = [
   ],
   imports: [
     BrowserModule,
-    SlickModule.forRoot(),
-     NgxCarouselModule,
-    // CarouselModule,
-    // OwlModule,
+    NgxCarouselModule,
     RouterModule.forRoot(routes, {useHash: true})
   ],
-  providers: [],
+  providers: [ChatService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
