@@ -7,6 +7,7 @@ import 'hammerjs';
 import { ChatService } from './chat.service';
 
 
+
 import { AppComponent } from './app.component';
 import { WelcomescreenComponent } from './welcomescreen/welcomescreen.component';
 import { MapComponent } from './map/map.component';
