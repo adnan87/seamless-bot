@@ -11,6 +11,7 @@ export class AppComponent implements OnInit{
   ngOnInit(){
     this.hideSlider()
   }
+  
   hideSlider(): void {
     let temp = this;
      setTimeout(function() {
