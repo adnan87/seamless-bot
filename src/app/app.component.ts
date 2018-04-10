@@ -12,17 +12,17 @@ export class AppComponent implements OnInit{
   title = 'Shift-bot';
   public edited = true;
   ngOnInit(){
-    this.hideSlider()
+    this.hideScreens()
     this.socket = io.connect('https://socket0test.herokuapp.com/');
     this.socket.on('actionRecieved', function(msg) {
       alert('BYYY');
        console.log(msg.action);
          });
   }
-  hideSlider(): void {
+  hideScreens(): void {
     let temp = this;
      setTimeout(function() {
          temp.edited = false;
-     }, 10000);
+     }, 15000);
     }
 }

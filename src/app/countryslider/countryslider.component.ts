@@ -15,12 +15,6 @@ export class CountrysliderComponent implements OnInit {
   public itemList: object[] = [];
   public carouselOne: NgxCarousel;
 
-     //slides:Array<Object>;
-   // slides:Array<Object> = [
-   //      'assets/Images/KSA/1.png',
-   //      'assets/Images/KSA/2.png'
-   //   ];
-    // slideConfig;
   constructor() {
   this.itemList = [
       {
@@ -52,11 +46,9 @@ export class CountrysliderComponent implements OnInit {
       load:2,
       touch: true,
       loop: true,
-      easing: 'ease',
-      animation: 'lazy',
       custom: 'banner'
     }
-  
+
    }
    public myfunc(event: Event) {
        // carouselLoad will trigger this funnction when your load value reaches

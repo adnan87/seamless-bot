@@ -21,13 +21,7 @@ import { OmansliderComponent } from './omanslider/omanslider.component';
 import { KuwaitsliderComponent } from './kuwaitslider/kuwaitslider.component';
 import { UaesliderComponent } from './uaeslider/uaeslider.component';
 
-const routes: Routes = [
-  {
-    path:'ksa',
-    component: CountrysliderComponent
-  }
 
-]
 @NgModule({
   declarations: [
     AppComponent,
@@ -45,8 +39,8 @@ const routes: Routes = [
   ],
   imports: [
     BrowserModule,
-    NgxCarouselModule,
-    RouterModule.forRoot(routes, {useHash: true})
+    NgxCarouselModule
+    // RouterModule.forRoot(routes, {useHash: true})
   ],
   providers: [ChatService],
   bootstrap: [AppComponent]
