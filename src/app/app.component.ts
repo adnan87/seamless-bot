@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import * as io from "socket.io-client";
 
 
@@ -11,6 +11,8 @@ export class AppComponent implements OnInit{
   socket = io('https://socket0test.herokuapp.com/');
   title = 'Shift-bot';
   public edited = true;
+  public childTitle = true;
+   // parentMessage = "message from parent"
   ngOnInit(){
     this.hideScreens()
     this.socket = io.connect('https://socket0test.herokuapp.com/');
@@ -24,5 +26,6 @@ export class AppComponent implements OnInit{
      setTimeout(function() {
          temp.edited = false;
      }, 15000);
+
     }
 }

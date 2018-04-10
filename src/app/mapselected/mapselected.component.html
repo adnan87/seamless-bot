@@ -33,7 +33,7 @@
     		c-19.73-31.558-39.678-62.98-59.594-94.422c-44.371-70.046-88.527-140.229-133.219-210.068
     		c-25.439-39.754-51.784-78.927-77.679-118.39c-36.922-56.27-73.84-112.544-110.627-168.902c-2.323-3.559-4.738-4.864-8.951-4.489
     		c-11.108,0.988-22.255,1.545-33.389,2.25C692.419,692.661,691.123,692.59,688.529,692.59z"/>
-    <path fill-rule="evenodd" clip-rule="evenodd" fill="none" id="Oman" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" d="
+    <path fill-rule="evenodd" clip-rule="evenodd" fill="none" id="oman" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" d="
     	M3152.901,1318.917c-2.133,10.256-4.021,19.846-6.186,29.374c-0.499,2.195-1.742,4.308-2.988,6.236
     	c-6.908,10.697-14.414,21.041-20.768,32.054c-6.79,11.769-12.123,24.38-18.917,36.147c-2.873,4.977-7.54,9.092-11.941,12.977
     	c-9.107,8.039-18.738,15.488-27.807,23.57c-2.519,2.244-5.201,5.741-5.455,8.855c-1.34,16.459-7.575,31.055-15.384,45.254
@@ -57,7 +57,7 @@
     	c24.68,16.648,49.313,33.378,74.399,49.398c5.187,3.312,12.086,4.229,18.347,5.515c27.003,5.551,54.069,10.792,81.085,16.284
     	c1.781,0.362,3.749,1.524,4.925,2.912c27.439,32.403,55.079,64.646,81.952,97.514c7.537,9.22,15.666,15.559,27.481,17.622
     	C3137.349,1313.938,3144.563,1316.588,3152.901,1318.917z"/>
-    <path fill-rule="evenodd" clip-rule="evenodd" fill="none" id="UAE" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" d="
+    <path fill-rule="evenodd" clip-rule="evenodd" fill="none" id="uae" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" d="
     	M2776.943,879.419c4.674,14.813,13.014,25.924,21.879,36.736c0.948,1.157,1.392,2.987,1.491,4.542
     	c1.357,21.105,2.525,42.223,3.96,63.321c0.314,4.636-0.484,8.079-4.431,11.204c-6.245,4.944-11.9,10.635-17.684,15.897
     	c-6.089-7.37-5.397-16.322-6.804-24.754c-0.327-1.961-1.602-3.763-2.439-5.638c-1.8,0.933-3.956,1.501-5.348,2.854
@@ -103,11 +103,11 @@
   </div>
   <div class="countrylist">
     <ul>
-      <li onclick="kuwait.style.fill='#18bf4b';">Kuwait</li>
-      <li onclick="saudi.style.fill='#18bf4b';">Saudi</li>
-      <li onclick="bahrain.style.fill='#18bf4b';">Bahrain</li>
-      <li onclick="UAE.style.fill='#18bf4b';" >UAE</li>
-      <li onclick="Oman.style.fill='#18bf4b';" >Oman</li>
+      <li (click)="onClickCountryClik('kuwait')">Kuwait</li>
+      <li (click)="onClickCountryClik('saudi')">Saudi</li>
+      <li (click)="onClickCountryClik('bahrain')">Bahrain</li>
+      <li (click)="onClickCountryClik('uae')">UAE</li>
+      <li (click)="onClickCountryClik('oman')">Oman</li>
     </ul>
   </div>
 
