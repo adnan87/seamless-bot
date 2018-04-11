@@ -2,13 +2,13 @@
 <div class="backgd">
   <div class="travelinfo">
     <div id="wrap" >
-    <div id="left" class="active">
+    <div id="left" class="active" [ngClass]="{highlighted: details.departureDate}">
       <div class="container active">
         <div class="icon"><img src="/assets/Images/png/departdate.png" class="imgicon"></div>
         <div class="detailtext"><p>Departure Date</p></div>
       </div>
     </div>
-    <div id="right">
+    <div id="right" [ngClass]="{highlighted: details.arrivalDate}">
        <div class="container">
         <div class="icon"><img src="/assets/Images/png/arrivaldate.png" class="imgicon"></div>
         <div class="detailtext">
@@ -17,7 +17,7 @@
       </div>
     </div>
 <div id="wrap">
-   <div id="left">
+   <div id="left" [ngClass]="{highlighted: details.departureCity}">
   <div class="container">
      <div class="icon"><img src="/assets/Images/png/departcity.png" class="imgicon"></div>
      <div class="detailtext">
@@ -25,7 +25,7 @@
      </div>
    </div>
  </div>
-<div id="right">
+<div id="right" [ngClass]="{highlighted: details.arrivalCity}">
     <div class="container">
      <div class="icon"><img src="/assets/Images/png/arrivalcity.png" class="imgicon"></div>
      <div class="detailtext">
@@ -35,7 +35,7 @@
  </div>
 </div>
 <div id="wrap">
-<div id="left">
+<div id="left" [ngClass]="{highlighted: details.passengers}">
   <div class="container">
      <div class="icon"><img src="/assets/Images/png/passengers.png" class="imgicon"></div>
      <div class="detailtext">
@@ -43,7 +43,7 @@
      </div>
    </div>
  </div>
-<div id="right">
+<div id="right" [ngClass]="{highlighted: details.airline}">
     <div class="container">
      <div class="icon"><img src="/assets/Images/png/airline.png" class="imgicon"></div>
      <div class="detailtext">
@@ -53,7 +53,7 @@
  </div>
 </div>
     <div id="wrap">
-      <div id="hotel">
+      <div id="hotel" [ngClass]="{highlighted: details.hotel}">
           <div class="container">
            <div class="icon"><img src="/assets/Images/png/Hotel.png" class="imgicon"></div>
            <div class="detailtext">

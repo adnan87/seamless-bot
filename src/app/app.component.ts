@@ -22,6 +22,7 @@ export class AppComponent implements OnInit{
   public thankYou = false;
 
   public country: string;
+  public updatedFields: string[];
 
   ngOnInit() {
     var temp = this;
@@ -137,10 +138,12 @@ export class AppComponent implements OnInit{
           temp.oman = false;
           temp.uae = false;
           temp.travelling = false;
-          temp.travelDetails = true;
           temp.thankYou = false;
           temp.welcome = false;
           temp.mapSelector = false;
+          let updatedFields = msg.action.result.updatedFields;
+          temp.updatedFields = updatedFields;
+          temp.travelDetails = true;
           break;
 
         case 'thankYou':
