@@ -29,11 +29,11 @@ export class AppComponent implements OnInit{
 
     this.socket = io.connect('https://socket0test.herokuapp.com/');
     this.socket.on('actionRecieved', function(msg) {
-      let action: string = msg.action.result.action;
+      let action: string = msg.action;
 
       switch(action){
         case 'countrySelect':
-          let country = msg.action.result.parameters.country;
+          let country = msg.country;
           temp.country = country;
           temp.ksa = false;
           temp.bahrain = false;
@@ -103,8 +103,8 @@ export class AppComponent implements OnInit{
           temp.ksa = false;
           temp.bahrain = false;
           temp.kuwait = false;
-          temp.oman = true;
-          temp.uae = false;
+          temp.oman = false;
+          temp.uae = true;
           temp.travelling = false;
           temp.travelDetails = false;
           temp.thankYou = false;
@@ -127,7 +127,7 @@ export class AppComponent implements OnInit{
           setTimeout(function(){
             temp.travelling = false;
             temp.travelDetails = true;
-          }, 5000);
+          }, 2000);
 
           break;
 
@@ -141,7 +141,7 @@ export class AppComponent implements OnInit{
           temp.thankYou = false;
           temp.welcome = false;
           temp.mapSelector = false;
-          let updatedFields = msg.action.result.updatedFields;
+          let updatedFields = msg.updatedFields;
           temp.updatedFields = updatedFields;
           temp.travelDetails = true;
           break;

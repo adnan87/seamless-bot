@@ -18,26 +18,26 @@ export class DeparturedetailComponent implements OnInit {
   	var temp = this;
 
   	this.details = {
-  		departureDate: false,
-  		arrivalDate: false,
-  		departureCity: false,
-  		arrivalCity: false,
-  		passengers: false,
-  		airline: false,
-  		hotel: false
+  		Outbound: false,
+  		Inbound: false,
+  		DepartureCity: false,
+  		ArrivalCity: false,
+  		Passengers: false,
+  		Airline: false,
+  		Hotel: false
   	}
 
   	var temp2 = {
-  		departureDate: false,
-  		arrivalDate: false,
-  		departureCity: false,
-  		arrivalCity: false,
-  		passengers: false,
-  		airline: false,
-  		hotel: false
+  		Outbound: false,
+  		Inbound: false,
+  		DepartureCity: false,
+  		ArrivalCity: false,
+  		Passengers: false,
+  		Airline: false,
+  		Hotel: false
   	}
 
-  	if(this.updatedFields.length){
+  	if(this.updatedFields && this.updatedFields.length){
   		for(let i in this.updatedFields) {
 			temp.details[this.updatedFields[i]] = true;
 		}
@@ -45,8 +45,8 @@ export class DeparturedetailComponent implements OnInit {
 
   	this.socket = io.connect('https://socket0test.herokuapp.com/');
     this.socket.on('actionRecieved', function(msg) {
-    	var updatedFields = msg.action.result.updatedFields;
-    	if(msg.action.result.action === "travelDetails"){
+    	var updatedFields = msg.updatedFields;
+    	if(msg.action === "travelDetails"){
     		temp.details = temp2;
     		for(let i in updatedFields) {
     			temp.details[updatedFields[i]] = true;
