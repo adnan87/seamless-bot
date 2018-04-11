@@ -6,42 +6,47 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./mapselected.component.scss']
 })
 export class MapselectedComponent implements OnInit {
-@Input() childTitle: boolean;
+@Input() country: string;
  constructor() { }
 
   ngOnInit() {
-    alert(this.childTitle)
-    // this.socket = io.connect('https://socket0test.herokuapp.com/');
-    // this.socket.on('actionRecieved', function(msg) {
-    //   alert('BYYY');
-    //    console.log(msg.action);
-    //          // console.log(this.messages);
-    //      });
+    this.selectRegion();
   }
 
-  onClickCountryClik(id){
-    var kuwait = document.getElementById(id);
-    var saudi = document.getElementById(id);
-    var bahrain = document.getElementById(id);
-    var uae = document.getElementById(id);
-    var oman = document.getElementById(id);
+  selectRegion(): void {
+    var kuwait = document.getElementById('kuwait');
+    var saudi = document.getElementById('saudi');
+    var bahrain = document.getElementById('bahrain');
+    var uae = document.getElementById('uae');
+    var oman = document.getElementById('oman');
 
-    if(this.childTitle && kuwait){
-      kuwait.style.fill='#18bf4b';
-    }
-    if(this.childTitle && saudi){
-      saudi.style.fill='#18bf4b';
-    }
-    if(this.childTitle && bahrain){
-      bahrain.style.fill='#18bf4b';
-    }
-    if(this.childTitle && uae){
-      uae.style.fill='#18bf4b';
-    }
-    if(this.childTitle && oman){
-      oman.style.fill='#18bf4b';
+    switch (this.country) {
+      case 'kuwait':
+        kuwait.style.fill='#18bf4b';
+        this.unsetFill(kuwait);
+        break;
+      case 'saudi':
+        saudi.style.fill='#18bf4b';
+        this.unsetFill(saudi);
+        break;
+      case 'bahrain':
+        bahrain.style.fill='#18bf4b';
+        this.unsetFill(bahrain);
+        break;
+      case 'uae':
+        uae.style.fill='#18bf4b';
+        this.unsetFill(uae);
+        break;
+      case 'oman':
+        oman.style.fill='#18bf4b';
+        this.unsetFill(oman);
+        break;
     }
   }
 
-
+  unsetFill(region): void {
+    setTimeout(function() {
+      region.style.fill = '';
+    }, 5000);
+  }
 }
