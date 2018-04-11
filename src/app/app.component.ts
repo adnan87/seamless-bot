@@ -30,7 +30,7 @@ export class AppComponent implements OnInit{
     this.socket = io.connect('https://socket0test.herokuapp.com/');
     this.socket.on('actionRecieved', function(msg) {
       let action: string = msg.action;
-
+      debugger
       switch(action){
         case 'countrySelect':
           let country = msg.country;
@@ -170,6 +170,7 @@ export class AppComponent implements OnInit{
           temp.thankYou = false;
           temp.welcome = true;
           temp.mapSelector = false;
+          temp.updatedFields = [];
           break;
       };
     });
