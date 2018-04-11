@@ -25,7 +25,7 @@ export class MapselectedComponent implements OnInit {
         kuwait.style.fill='#18bf4b';
         this.unsetFill(kuwait);
         break;
-      case 'saudi':
+      case 'ksa':
         saudi.style.fill='#18bf4b';
         this.unsetFill(saudi);
         break;
