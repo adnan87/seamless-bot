@@ -34,8 +34,8 @@ export class UaesliderComponent implements OnInit {
     this.carouselOne = {
       grid: {xs: 1, sm: 1, md: 1, lg: 1, all: 0},
       slide: 1,
-      speed: 3400,
-      interval: 3800,
+      speed: 4400,
+      interval: 3900,
       point: {
         visible: false
       },
