@@ -23,6 +23,7 @@ export class AppComponent implements OnInit{
 
   public country: string;
   public updatedFields: string[];
+  public travelInfo: any;
 
   ngOnInit() {
     var temp = this;
@@ -154,6 +155,7 @@ export class AppComponent implements OnInit{
           temp.uae = false;
           temp.travelling = false;
           temp.travelDetails = false;
+          temp.travelInfo = msg.details;
           temp.thankYou = true;
           temp.welcome = false;
           temp.mapSelector = false;
@@ -171,6 +173,7 @@ export class AppComponent implements OnInit{
           temp.welcome = true;
           temp.mapSelector = false;
           temp.updatedFields = [];
+          temp.travelInfo = {};
           break;
       };
     });

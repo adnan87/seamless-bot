@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 
 @Component({
@@ -7,10 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./thank-you.component.scss']
 })
 export class ThankYouComponent implements OnInit {
+  @Input() travelInfo: any;
 
   constructor() { }
 
   ngOnInit() {
+  	this.travelInfo;
   }
 
 }
