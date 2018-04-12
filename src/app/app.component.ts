@@ -119,16 +119,16 @@ export class AppComponent implements OnInit{
           temp.kuwait = false;
           temp.oman = false;
           temp.uae = false;
-          temp.travelling = true;
+          //temp.travelling = true;
           temp.travelDetails = false;
           temp.thankYou = false;
           temp.welcome = false;
           temp.mapSelector = false;
 
           setTimeout(function(){
-            temp.travelling = false;
+            // temp.travelling = false;
             temp.travelDetails = true;
-          }, 2000);
+          }, 100);
 
           break;
 
