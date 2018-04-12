@@ -31,19 +31,23 @@ export class UaesliderComponent implements OnInit {
       ] }
 
   ngOnInit() {
-    this.carouselOne = {
-      grid: {xs: 1, sm: 1, md: 1, lg: 1, all: 0},
-      slide: 1,
-      speed: 4400,
-      interval: 3900,
-      point: {
-        visible: false
-      },
-      load: 2,
-      touch: true,
-      loop: true,
-      custom: 'banner'
-    }
+    setTimeout(function(){
+            // temp.travelling = false;
+            this.carouselOne = {
+              grid: {xs: 1, sm: 1, md: 1, lg: 1, all: 0},
+              slide: 1,
+              speed: 5000,
+              interval: 4800,
+              point: {
+                visible: false
+              },
+              load: 2,
+              touch: true,
+              loop: true,
+              custom: 'banner'
+            }
+          }, 1000);
+    
   }
   public myfunc(event: Event) {
       // carouselLoad will trigger this funnction when your load value reaches
