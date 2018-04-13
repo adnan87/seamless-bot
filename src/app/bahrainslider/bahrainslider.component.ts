@@ -49,7 +49,7 @@ export class BahrainsliderComponent implements OnInit {
     }
 
   public myfunc(event: Event) {
-  
+
    }
 
 }

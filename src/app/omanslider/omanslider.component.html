@@ -1,23 +1,4 @@
-<!-- <div class="slider">
-<ngx-slick class="carousel" #slickModal="slick-modal" [config]="slideConfig">
-     <div ngxSlickItem *ngFor="let slide of slides">
-           <img src="{{ slide.img }}" alt="" width="100%" height="100%">
-     </div>
- </ngx-slick>
-</div> -->
-<!-- <ngx-carousel
-        [inputs]="carouselOne"
-        (carouselLoad)="myfunc($event)">
-          <ngx-item NgxCarouselItem>
-          <img src= "assets/Images/Oman/1.png" width="100%" height="100%">
-          </ngx-item>
-          <ngx-item NgxCarouselItem>
-          <img src= "assets/Images/Oman/2.png" width="100%" height="100%">
-          </ngx-item>
 
-          <button NgxCarouselPrev class='leftRs'></button>
-          <button NgxCarouselNext class='rightRs'></button>
-</ngx-carousel> -->
 <div>
       <ngx-carousel [inputs]="carouselOne">
       <ngx-item *ngFor="let item of itemList" NgxCarouselItem>
