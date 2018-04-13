@@ -1,4 +1,3 @@
-
 <div class="backgd">
   <div class="travelinfo">
     <div id="wrap">
@@ -33,7 +32,7 @@
           <div class="container">
            <div class="icon"><img src="assets/Images/png/departcity.png" class="imgicon"></div>
            <div class="detailtext">
-             <h3>Departure City<p>{{ travelInfo.DepartureCity["business-name"] }}</p></h3>
+             <h3>Departure City<p>{{ travelInfo.DepartureCity["business-name"] || travelInfo.DepartureCity.city }}</p></h3>
 
            </div>
          </div>
@@ -42,7 +41,7 @@
           <div class="container">
            <div class="icon"><img src="assets/Images/png/arrivalcity.png" class="imgicon"></div>
            <div class="detailtext">
-             <h3>Arrival City<p>{{ travelInfo.ArrivalCity["business-name"] }}</p></h3>
+             <h3>Arrival City<p>{{ travelInfo.ArrivalCity["business-name"] || travelInfo.ArrivalCity.city }}</p></h3>
 
            </div>
          </div>
