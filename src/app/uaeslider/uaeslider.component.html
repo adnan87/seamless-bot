@@ -1,16 +1,4 @@
-<!-- <ngx-carousel
-        [inputs]="carouselOne"
-        (carouselLoad)="myfunc($event)">
-          <ngx-item NgxCarouselItem>
-          <img src= "assets/Images/UAE/1.png" width="100%" height="100%">
-          </ngx-item>
-          <ngx-item NgxCarouselItem>
-          <img src= "assets/Images/UAE/2.png" width="100%" height="100%">
-          </ngx-item>
 
-          <button NgxCarouselPrev class='leftRs'></button>
-          <button NgxCarouselNext class='rightRs'></button>
-</ngx-carousel> -->
 <div>
       <ngx-carousel [inputs]="carouselOne">
       <ngx-item *ngFor="let item of itemList" NgxCarouselItem>

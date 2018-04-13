@@ -21,11 +21,11 @@ export class UaesliderComponent implements OnInit {
 
         },
         {
-          title: 'assets/Images/UAE/1.png',
+          title: 'assets/Images/UAE/3.png',
 
         },
         {
-          title: 'assets/Images/UAE/2.png',
+          title: 'assets/Images/UAE/4.png',
         }
 
       ] }
